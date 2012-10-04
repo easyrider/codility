@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackingCodingInterview", "CrackingCodingInterview\CrackingCodingInterview.csproj", "{417C6B29-BE28-4A8E-840C-EC9BBC40E67E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackingCodingInterview.Test", "CrackingCodingInterview.Test\CrackingCodingInterview.Test.csproj", "{21866DB4-4857-4AE5-95B5-A44872226A82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{417C6B29-BE28-4A8E-840C-EC9BBC40E67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417C6B29-BE28-4A8E-840C-EC9BBC40E67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417C6B29-BE28-4A8E-840C-EC9BBC40E67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{417C6B29-BE28-4A8E-840C-EC9BBC40E67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21866DB4-4857-4AE5-95B5-A44872226A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21866DB4-4857-4AE5-95B5-A44872226A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21866DB4-4857-4AE5-95B5-A44872226A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21866DB4-4857-4AE5-95B5-A44872226A82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
