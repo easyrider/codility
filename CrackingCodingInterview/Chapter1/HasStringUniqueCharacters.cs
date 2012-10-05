@@ -7,9 +7,9 @@ namespace CrackingCodingInterview.Chapter1
         Description = "Implement an algorithm to determine " +
                       "if a string has all unique characters. " +
                       "What if you can not use additional data structures?")]
-    public class UniqueCharactersInString
+    public class HasStringUniqueCharacters : Algorithm<string, bool>
     {
-        public bool HasAllUniqueCharactersWithoutDataStructures(string @string)
+        public override bool Execute(string @string)
         {
             if (@string == null) throw new ArgumentNullException("string");
 
@@ -17,16 +17,20 @@ namespace CrackingCodingInterview.Chapter1
 
             var length = @string.Length;
 
+            SetComplexityBase(length);
+
             for (var i = 0; i < (length - 1); i++)
             {
+                IncrementComplexity();
                 var current = @string[i];
 
                 for(var j = i + 1; j < length; j++)
-                {
-                     if (current == @string[j])
-                     {
-                         return false;
-                     }
+                {   
+                    IncrementComplexity();
+                    if (current == @string[j])
+                    {
+                        return false;
+                    }
                 }
             }
 
