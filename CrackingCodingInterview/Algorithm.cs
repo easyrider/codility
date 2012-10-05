@@ -4,7 +4,7 @@
     {
         private int _base;
         private int _complexityIncrement;
-
+            
         public string Complexity
         {
             get { return string.Format("{0}/{1}", _complexityIncrement, _base); }

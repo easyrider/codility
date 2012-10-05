@@ -17,7 +17,7 @@ namespace CrackingCodingInterview.Test.Chapter1
         [TestCase("aasdfghh", false)]
         public void Test(string @string, bool result)
         {
-            var cut = new HasStringUniqueCharacters();
+            var cut = new HasStringUniqueCharactersWoDataStructures();
             Assert.AreEqual(result, cut.Execute(@string));
             Trace.TraceInformation("Complexity: {0}", cut.Complexity);
         }
