@@ -1,18 +1,16 @@
-﻿using System;
+using System;
 
 namespace CrackingCodingInterview.Chapter1
 {
- 
     [Reference(
         Page = 48
         , Number = "1.1"
         , Description = "Implement an algorithm to determine " +
                       "if a string has all unique characters. " +
                       "What if you can not use additional data structures?"
-        , Variant = 1
-        , Comments = "This algorithm does not use additional datastructures, " +
-                     "its complexity maybe O(n^2) in the worst case though")]
-    public class HasStringUniqueCharactersWoDataStructures : Algorithm<string, bool>
+        , Variant = 2
+        , Comments = "Complexity of this algorithm is O(n) in the worst case. But its memory is additional O(2^16 - 1)")]
+    public class HasStringUniqueCharactersWithArray : Algorithm<string, bool>
     {
         protected override bool OnExecute(string @string)
         {
@@ -22,17 +20,17 @@ namespace CrackingCodingInterview.Chapter1
 
             var length = @string.Length;
 
-            for (var i = 0; i < (length - 1); i++)
-            {
-                var current = @string[i];
+            var flagSet = new bool[(int)Math.Pow(2, sizeof (char) * 8) - 1];
 
-                for(var j = i + 1; j < length; j++)
-                {   
-                    if (current == @string[j])
-                    {
-                        return false;
-                    }
-                }
+            for (var i = 0; i < length; i++)
+            {
+                var @char = @string[i];
+                var flag = flagSet[@char];
+
+                if (flag)
+                    return false;
+                
+                flagSet[@char] = true;
             }
 
             return true;

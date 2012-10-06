@@ -1,6 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using CrackingCodingInterview.Chapter1;
+﻿using CrackingCodingInterview.Chapter1;
 using NUnit.Framework;
 
 namespace CrackingCodingInterview.Test.Chapter1
@@ -10,17 +8,30 @@ namespace CrackingCodingInterview.Test.Chapter1
     public class HasStringUniqueCharactersTest
     {
         [Test]
-        [TestCase("asdfgh", true)]
-        [TestCase("aasdfgh", false)]
-        [TestCase("asdfghh", false)]
-        [TestCase("asddfgh", false)]
-        [TestCase("aasdfghh", false)]
-        public void Test(string @string, bool result)
+        [TestCase("asdfgh", Result = true)]
+        [TestCase("aasdfgh", Result = false)]
+        [TestCase("asdfghh", Result = false)]
+        [TestCase("asddfgh", Result = false)]
+        [TestCase("aasdfghh", Result = false)]
+        public bool WoDataStrcutures_Test(string @string)
         {
             var cut = new HasStringUniqueCharactersWoDataStructures();
-            Assert.AreEqual(result, cut.Execute(@string));
-            Trace.TraceInformation("Complexity: {0}", cut.Complexity);
+            return cut.Execute(@string);
         }
+
+        [Test]
+        [TestCase("asdfgh", Result = true)]
+        [TestCase("aasdfgh", Result = false)]
+        [TestCase("asdfghh", Result = false)]
+        [TestCase("asddfgh", Result = false)]
+        [TestCase("aasdfghh", Result = false)]
+        public bool WithArray_Test(string @string)
+        {
+            var cut = new HasStringUniqueCharactersWithArray();
+            return cut.Execute(@string);
+        }
+
+
     }
 
 }

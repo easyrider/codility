@@ -1,25 +1,46 @@
-﻿namespace CrackingCodingInterview
+﻿using System;
+using System.Diagnostics;
+
+namespace CrackingCodingInterview
 {
     public abstract class Algorithm<TInput, TResult>
     {
-        private int _base;
-        private int _complexityIncrement;
+        public  TResult Execute(TInput arg)
+        {
+            if (Stopwatch.IsRunning)
+                throw new InvalidOperationException("Execution is already running. The class is not thread-safe");
+
+            Stopwatch.Reset();
+            Stopwatch.Start();
             
-        public string Complexity
-        {
-            get { return string.Format("{0}/{1}", _complexityIncrement, _base); }
+            try
+            {
+                return OnExecute(arg);
+            }
+            finally
+            {
+                Stopwatch.Stop();    
+            }
         }
 
-        protected void SetComplexityBase(int @base)
+        public TimeSpan ExecutionTime
         {
-            _base = @base;
+            get
+            {
+                if (!_stopwatchLazy.IsValueCreated)
+                    throw new InvalidOperationException("Execution has not been run yet");
+
+                return _stopwatchLazy.Value.Elapsed;
+            }
         }
 
-        protected void IncrementComplexity()
+        protected abstract TResult OnExecute(TInput arg);
+    
+        private Stopwatch Stopwatch
         {
-            _complexityIncrement++;
+            get { return _stopwatchLazy.Value; }
         }
 
-        public abstract TResult Execute(TInput arg);
+        private readonly Lazy<Stopwatch> _stopwatchLazy = new Lazy<Stopwatch>(); 
     }
 }

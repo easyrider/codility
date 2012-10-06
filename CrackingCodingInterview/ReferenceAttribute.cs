@@ -8,5 +8,7 @@ namespace CrackingCodingInterview
         public string Number { get; set; }
         public int Page { get; set; }
         public string Description { get; set; }
+        public int Variant { get; set; }
+        public string Comments { get; set; }
     }
 }
