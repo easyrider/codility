@@ -22,18 +22,26 @@ namespace CrackingCodingInterview.Chapter1
 
             var flagSet = new bool[(int)Math.Pow(2, sizeof (char) * 8) - 1];
 
-            for (var i = 0; i < length; i++)
-            {
-                var @char = @string[i];
-                var flag = flagSet[@char];
+            var result = true;
 
-                if (flag)
-                    return false;
-                
-                flagSet[@char] = true;
-            }
+            Loop(0, length, ctx =>
+                                {
 
-            return true;
+                                    var @char = @string[ctx.Seed];
+                                    var flag = flagSet[@char];
+
+                                    if (flag)
+                                    {
+                                        result = false;
+                                        ctx.Break = true;
+                                        return;
+                                    }
+
+                                    flagSet[@char] = true;
+                                });
+
+            return result;
         }
     }
+
 }

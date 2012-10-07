@@ -22,20 +22,21 @@ namespace CrackingCodingInterview.Chapter1
 
             var length = @string.Length;
 
-            for (var i = 0; i < (length - 1); i++)
-            {
-                var current = @string[i];
+            var result = true;
 
-                for(var j = i + 1; j < length; j++)
-                {   
-                    if (current == @string[j])
-                    {
-                        return false;
-                    }
-                }
-            }
+            Loop(0, length - 1, ctx =>
+                                    {
+                                        var current = @string[ctx.Seed];
 
-            return true;
+                                        Loop(ctx.Seed + 1, length, innerCtx =>
+                                                                {
+                                                                    if (current != @string[innerCtx.Seed]) return;
+                                                                    ctx.Break = innerCtx.Break = true;                                                                   
+                                                                    result = false;
+                                                                });
+                                    });
+
+            return result;
         }
     }
 }
