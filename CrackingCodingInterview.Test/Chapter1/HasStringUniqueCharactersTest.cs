@@ -15,10 +15,7 @@ namespace CrackingCodingInterview.Test.Chapter1
         public bool WoDataStrcutures_Test(string @string)
         {
             var cut = new HasStringUniqueCharactersWoDataStructures();
-            var woDataStrcuturesTest = cut.Execute(@string);
-            Trace.TraceInformation("Execution Time: {0}", cut.ExecutionTime);
-            Trace.TraceInformation("Complexity: {0}", cut.Complexity);
-            return woDataStrcuturesTest;
+            return RunTest(@string, cut);
         }
 
         [Test]
@@ -26,10 +23,23 @@ namespace CrackingCodingInterview.Test.Chapter1
         public bool WithArray_Test(string @string)
         {
             var cut = new HasStringUniqueCharactersWithArray();
-            var withArrayTest = cut.Execute(@string);
+            return RunTest(@string, cut);
+        }
+
+        [Test]
+        [TestCaseSource("TestCases")]
+        public bool WithHashSet_Test(string @string)
+        {
+            var cut = new HasStringUniqueCharactersWithHashSet();
+            return RunTest(@string, cut);
+        }
+
+        private static bool RunTest(string @string, Algorithm<string, bool> cut)
+        {
+            var withHashSetTest = cut.Execute(@string);
             Trace.TraceInformation("Execution Time: {0}", cut.ExecutionTime);
             Trace.TraceInformation("Complexity: {0}", cut.Complexity);
-            return withArrayTest;
+            return withHashSetTest;
         }
 
         public static IEnumerable TestCases

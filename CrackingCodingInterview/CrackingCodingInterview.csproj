@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chapter1\HasStringUniqueCharactersWithArray.cs" />
+    <Compile Include="Chapter1\HasStringUniqueCharactersWithHashSet.cs" />
     <Compile Include="Chapter1\HasStringUniqueCharactersWODataStructures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReferenceAttribute.cs" />

@@ -43,5 +43,4 @@ namespace CrackingCodingInterview.Chapter1
             return result;
         }
     }
-
 }
