@@ -24,7 +24,7 @@ namespace CrackingCodingInterview.Chapter1
 
             var result = true;
 
-            Loop(0, length, ctx =>
+            For(0, length, ctx =>
                                 {
 
                                     var @char = @string[ctx.Seed];

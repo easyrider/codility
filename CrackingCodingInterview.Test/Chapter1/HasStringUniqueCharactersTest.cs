@@ -8,7 +8,8 @@ namespace CrackingCodingInterview.Test.Chapter1
 {
 
     [TestFixture]
-    public class HasStringUniqueCharactersTest
+    public class 
+        HasStringUniqueCharactersTest : TestBase
     {
         [Test]
         [TestCaseSource("TestCases")]
@@ -33,15 +34,7 @@ namespace CrackingCodingInterview.Test.Chapter1
             var cut = new HasStringUniqueCharactersWithHashSet();
             return RunTest(@string, cut);
         }
-
-        private static bool RunTest(string @string, Algorithm<string, bool> cut)
-        {
-            var withHashSetTest = cut.Execute(@string);
-            Trace.TraceInformation("Execution Time: {0}", cut.ExecutionTime);
-            Trace.TraceInformation("Complexity: {0}", cut.Complexity);
-            return withHashSetTest;
-        }
-
+        
         public static IEnumerable TestCases
         {
             get 

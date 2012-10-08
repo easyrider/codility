@@ -35,11 +35,7 @@ namespace CrackingCodingInterview
 
         public TResult Execute(TInput arg)
         {
-            var enumerable = arg as IEnumerable;
-            if (enumerable != null)
-            {
-                SetBaseSize(enumerable.Cast<object>().Count());
-            }
+            SetBaseSize(OnInitComplexity(arg));
 
             if (Stopwatch.IsRunning)
                 throw new InvalidOperationException("Execution is already running. The class is not thread-safe");
@@ -57,16 +53,36 @@ namespace CrackingCodingInterview
             }
         }
 
-        protected void Loop(int start, int end, Action<LoopContext> body)
+        protected virtual int OnInitComplexity(TInput arg)
         {
-            var context = new LoopContext();
+            var enumerable = arg as IEnumerable;
+            if (enumerable != null)
+            {
+                return enumerable.Cast<object>().Count();
+            }
+
+            throw new InvalidOperationException("Can not init complexity");
+        }
+
+        protected void For(int start, int end, Action<ForContext> body)
+        {
+            var context = new ForContext();
             for (context.Seed = start; context.Seed < end; context.Seed++)
             {
                 IncrementIteration();
                 body(context);
-                
+
                 if (context.Break)
                     break;
+            }
+        }
+
+        protected void While(Func<bool> condition, Action body)
+        {
+            while (condition())
+            {
+                IncrementIteration();
+                body();
             }
         }
 
@@ -82,9 +98,9 @@ namespace CrackingCodingInterview
 
         protected abstract TResult OnExecute(TInput arg);
 
-        #region Nested type: LoopContext
+        #region Nested type: ForContext
 
-        protected class LoopContext
+        protected class ForContext
         {
             public int Seed { get; set; }
             public bool Break { get; set; }

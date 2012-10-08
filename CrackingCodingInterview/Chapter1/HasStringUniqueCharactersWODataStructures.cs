@@ -24,11 +24,11 @@ namespace CrackingCodingInterview.Chapter1
 
             var result = true;
 
-            Loop(0, length - 1, ctx =>
+            For(0, length - 1, ctx =>
                                     {
                                         var current = @string[ctx.Seed];
 
-                                        Loop(ctx.Seed + 1, length, innerCtx =>
+                                        For(ctx.Seed + 1, length, innerCtx =>
                                                                 {
                                                                     if (current != @string[innerCtx.Seed]) return;
                                                                     ctx.Break = innerCtx.Break = true;                                                                   
