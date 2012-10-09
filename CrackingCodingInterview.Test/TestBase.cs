@@ -8,7 +8,7 @@ namespace CrackingCodingInterview.Test
         {
             var withHashSetTest = cut.Execute(@string);
             Trace.TraceInformation("Execution Time: {0}", cut.ExecutionTime);
-            Trace.TraceInformation("Complexity: {0}", cut.Complexity);
+            Trace.TraceInformation("TimeComplexity: {0}", cut.TimeComplexity);
             return withHashSetTest;
         }
     }

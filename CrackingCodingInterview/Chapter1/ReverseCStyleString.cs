@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace CrackingCodingInterview.Chapter1
+﻿namespace CrackingCodingInterview.Chapter1
 {
     [Reference(
         Page = 48
@@ -8,7 +6,7 @@ namespace CrackingCodingInterview.Chapter1
         , Description = "Write code to reverse a C-Style String."
         , Variant = 1
     )]
-    public class ReverseCStyleString : Algorithm<CStyleString, CStyleString>
+    public class ReverseCStyleString : CStyleStringAlgorithmBase
     {
         protected override CStyleString OnExecute(CStyleString arg)
         {
@@ -26,11 +24,6 @@ namespace CrackingCodingInterview.Chapter1
                                                     });
 
             return arg;
-        }
-
-        protected override int OnInitComplexity(CStyleString arg)
-        {
-            return arg.TakeWhile(@char => @char != CStyleString.NullCharacter).Count();
         }
     }
 

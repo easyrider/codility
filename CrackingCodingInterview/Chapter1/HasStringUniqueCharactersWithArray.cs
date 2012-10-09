@@ -9,7 +9,7 @@ namespace CrackingCodingInterview.Chapter1
                       "if a string has all unique characters. " +
                       "What if you can not use additional data structures?"
         , Variant = 2
-        , Comments = "Complexity of this algorithm is O(n) in the worst case. But its memory is additional O(2^16 - 1)")]
+        , Comments = "TimeComplexity of this algorithm is O(n) in the worst case. But its memory is additional O(2^16 - 1)")]
     public class HasStringUniqueCharactersWithArray : Algorithm<string, bool>
     {
         protected override bool OnExecute(string @string)

@@ -10,7 +10,7 @@ namespace CrackingCodingInterview.Chapter1
                         "if a string has all unique characters. " +
                         "What if you can not use additional data structures?"
         , Variant = 3
-        , Comments = "Complexity of this algorithm is O(n) + Hashset insert add complexity in the worst case. Memory is consumed on geometric progression")]
+        , Comments = "TimeComplexity of this algorithm is O(n) + Hashset insert add complexity in the worst case. Memory is consumed on geometric progression")]
     public class HasStringUniqueCharactersWithHashSet : Algorithm<string, bool>
     {
         protected override bool OnExecute(string @string)

@@ -12,7 +12,7 @@ namespace CrackingCodingInterview
         private int _baseSize;
         private int _iteration;
 
-        public string Complexity
+        public string TimeComplexity
         {
             get { return string.Format("{0}/{1}", _iteration, _baseSize); }
         }
@@ -86,7 +86,7 @@ namespace CrackingCodingInterview
             }
         }
 
-        private void IncrementIteration()
+        protected void IncrementIteration()
         {
             _iteration++;
         }

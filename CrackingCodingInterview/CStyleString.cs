@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CrackingCodingInterview
 {
@@ -28,7 +29,18 @@ namespace CrackingCodingInterview
                 return (char) _random.Next(char.MinValue, char.MaxValue);
             }
 
-            set { _value[index] = value; }
+            set
+            {
+                if (index < _value.Length)
+                {
+                    _value[index] = value;    
+                }
+                else if (index == _value.Length)
+                {
+                    if(value != '\0')
+                        throw new NotImplementedException("changing a string ending is not implemented");        
+                }            
+            }
         }
 
         #region IEnumerable<char> Members
@@ -47,7 +59,7 @@ namespace CrackingCodingInterview
 
         public override string ToString()
         {
-            return new string(_value);
+            return new string(_value.TakeWhile(x=>x != NullCharacter).ToArray());
         }
 
         #region Nested type: Enumerator
