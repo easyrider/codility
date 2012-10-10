@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chapter1\AreStringsAnagrams.cs" />
     <Compile Include="Chapter1\RemoveDuplicateCharactersTest.cs" />
     <Compile Include="Chapter1\ReverseCStyleStringTest.cs" />
     <Compile Include="Chapter1\HasStringUniqueCharactersTest.cs" />

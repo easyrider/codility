@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chapter1\AreStringsAnagrams.cs" />
     <Compile Include="Chapter1\HasStringUniqueCharactersWithArray.cs" />
     <Compile Include="Chapter1\HasStringUniqueCharactersWithHashSet.cs" />
     <Compile Include="Chapter1\HasStringUniqueCharactersWODataStructures.cs" />
