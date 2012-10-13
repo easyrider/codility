@@ -9,23 +9,24 @@ namespace CrackingCodingInterview
     {
         public const char NullCharacter = '\0';
         private readonly Random _random = new Random();
-        private readonly char[] _value;
+        private char[] _value;
 
         public CStyleString(string value)
         {
             if (value == null) throw new ArgumentNullException("value");
-            _value = value.ToCharArray();
+            var length = value.Length;
+            _value = new char[length + 1];
+            Array.Copy(value.ToCharArray(), _value, length);
+            _value[length] = NullCharacter;
         }
 
         public char this[int index]
         {
             get
             {
-                int length = _value.Length;
+                var length = _value.Length;
                 if (index < length)
                     return _value[index];
-                if (index == length)
-                    return NullCharacter;
                 return (char) _random.Next(char.MinValue, char.MaxValue);
             }
 
@@ -35,11 +36,14 @@ namespace CrackingCodingInterview
                 {
                     _value[index] = value;    
                 }
-                else if (index == _value.Length)
+                else if (index >= _value.Length)
                 {
-                    if(value != '\0')
-                        throw new NotImplementedException("changing a string ending is not implemented");        
-                }            
+                    var tmp = new char[index + 1];
+                    _value.CopyTo(tmp, 0);
+                    tmp[index] = value;
+                    _value = tmp;
+                } 
+                else throw new NotImplementedException();
             }
         }
 
