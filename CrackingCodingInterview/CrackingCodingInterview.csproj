@@ -47,6 +47,7 @@
     <Compile Include="Chapter1\RemoveDuplicateCharacters.cs" />
     <Compile Include="Chapter1\ReplaceSpacesWithHtmlCode.cs" />
     <Compile Include="Chapter1\ReverseCStyleString.cs" />
+    <Compile Include="Chapter1\RotatePixelMatrix90degrees.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
