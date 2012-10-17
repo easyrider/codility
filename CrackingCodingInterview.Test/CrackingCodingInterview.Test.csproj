@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chapter1\AreStringsAnagramsTests.cs" />
+    <Compile Include="Chapter1\SetRowAndColumnToZeroWhereCellIsZeroTest.cs" />
     <Compile Include="Chapter1\ReplaceSpacesWithHtmlCodeTests.cs" />
     <Compile Include="Chapter1\RemoveDuplicateCharactersTest.cs" />
     <Compile Include="Chapter1\ReverseCStyleStringTest.cs" />
