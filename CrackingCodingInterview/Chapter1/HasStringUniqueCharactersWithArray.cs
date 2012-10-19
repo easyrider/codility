@@ -10,8 +10,9 @@ namespace CrackingCodingInterview.Chapter1
                       "What if you can not use additional data structures?"
         , Variant = 2
         , Comments = "TimeComplexity of this algorithm is O(n) in the worst case. But its memory is additional O(2^16 - 1)")]
-    public class HasStringUniqueCharactersWithArray : Algorithm<string, bool>
+    public class HasStringUniqueCharactersWithArray : HasStringUniqueCharactersBase
     {
+     
         protected override bool OnExecute(string @string)
         {
             if (@string == null) throw new ArgumentNullException("string");

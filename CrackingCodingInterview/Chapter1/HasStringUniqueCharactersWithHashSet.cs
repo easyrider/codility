@@ -11,7 +11,7 @@ namespace CrackingCodingInterview.Chapter1
                         "What if you can not use additional data structures?"
         , Variant = 3
         , Comments = "TimeComplexity of this algorithm is O(n) + Hashset insert add complexity in the worst case. Memory is consumed on geometric progression")]
-    public class HasStringUniqueCharactersWithHashSet : Algorithm<string, bool>
+    public class HasStringUniqueCharactersWithHashSet : HasStringUniqueCharactersBase
     {
         protected override bool OnExecute(string @string)
         {

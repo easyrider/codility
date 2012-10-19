@@ -12,7 +12,7 @@ namespace CrackingCodingInterview.Chapter1
         , Variant = 1
         , Comments = "This algorithm does not use additional datastructures, " +
                      "its complexity maybe O(n^2) in the worst case though")]
-    public class HasStringUniqueCharactersWoDataStructures : Algorithm<string, bool>
+    public class HasStringUniqueCharactersWoDataStructures : HasStringUniqueCharactersBase
     {
         protected override bool OnExecute(string @string)
         {

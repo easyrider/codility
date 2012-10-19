@@ -53,16 +53,7 @@ namespace CrackingCodingInterview
             }
         }
 
-        protected virtual int OnInitComplexity(TInput arg)
-        {
-            var enumerable = arg as IEnumerable;
-            if (enumerable != null)
-            {
-                return enumerable.Cast<object>().Count();
-            }
-
-            throw new InvalidOperationException("Can not init complexity");
-        }
+        protected abstract int OnInitComplexity(TInput arg);
 
         protected void For(int start, int end, Action<ForContext> body)
         {
