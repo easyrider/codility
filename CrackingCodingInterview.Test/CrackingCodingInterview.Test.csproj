@@ -51,6 +51,7 @@
     <Compile Include="Chapter1\ReverseCStyleStringTest.cs" />
     <Compile Include="Chapter1\HasStringUniqueCharactersTest.cs" />
     <Compile Include="Chapter1\RotatePixelMatrix90degreesTest.cs" />
+    <Compile Include="Chapter2\FindNthToLastTest.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithDataStructureTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />

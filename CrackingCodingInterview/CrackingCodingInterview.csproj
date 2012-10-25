@@ -51,12 +51,14 @@
     <Compile Include="Chapter1\ReplaceSpacesWithHtmlCode.cs" />
     <Compile Include="Chapter1\ReverseCStyleString.cs" />
     <Compile Include="Chapter1\RotatePixelMatrix90degrees.cs" />
+    <Compile Include="Chapter2\FindNthToLast.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListBase.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithoutDataStructure.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithDataStructure.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
     <Compile Include="LinkedListNode.cs" />
+    <Compile Include="LinkedListNodeHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReferenceAttribute.cs" />
     <Compile Include="Algorithm.cs" />

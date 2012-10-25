@@ -24,11 +24,11 @@ namespace CrackingCodingInterview.Test.Chapter2
             return Test(cut, @array);
         }
 
-        public int[] Test(RemoveDuplicatesFromUnsortedLinkedListBase cut,int[] @array)
+        private static int[] Test(Algorithm<LinkedListNode<int>, LinkedListNode<int>> cut,IList<int> @array)
         {
             LinkedListNode<int> previous = null;
             LinkedListNode<int> head = null;
-            for (var index = 0; index < @array.Length; index++)
+            for (var index = 0; index < @array.Count; index++)
             {
                 var t = @array[index];
                 var tmp = new LinkedListNode<int> { Data = t };
