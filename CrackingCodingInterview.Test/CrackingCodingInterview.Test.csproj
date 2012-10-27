@@ -53,7 +53,9 @@
     <Compile Include="Chapter1\RotatePixelMatrix90degreesTest.cs" />
     <Compile Include="Chapter2\DeleteNodeInTheMiddleOfListHavingOnlyAccessToItTest.cs" />
     <Compile Include="Chapter2\FindNthToLastTest.cs" />
+    <Compile Include="Chapter2\LinkedListHelper.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithDataStructureTest.cs" />
+    <Compile Include="Chapter2\SumTwoLinkedListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />
   </ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using CrackingCodingInterview.Chapter2;
 using NUnit.Framework;
 
@@ -15,25 +16,9 @@ namespace CrackingCodingInterview.Test.Chapter2
             return TestInternal(@array, nth);
         }
 
-        private int TestInternal(int[] @array, int nth)
+        private static int TestInternal(IEnumerable<int> @array, int nth)
         {
-            LinkedListNode<int> previous = null;
-            LinkedListNode<int> head = null;
-            for (var index = 0; index < @array.Length; index++)
-            {
-                var t = @array[index];
-                var tmp = new LinkedListNode<int> { Data = t };
-                if (previous != null)
-                {
-                    previous.Next = tmp;
-                }
-                else
-                {
-                    head = tmp;
-                }
-
-                previous = tmp;
-            }
+            var head = LinkedListHelper.ConvertToLinkedList(@array);
 
             var cut = new FindNthToLast();
 

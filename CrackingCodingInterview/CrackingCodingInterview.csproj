@@ -56,6 +56,7 @@
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListBase.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithoutDataStructure.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithDataStructure.cs" />
+    <Compile Include="Chapter2\SumTwoLinkedList.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
     <Compile Include="LinkedListNode.cs" />

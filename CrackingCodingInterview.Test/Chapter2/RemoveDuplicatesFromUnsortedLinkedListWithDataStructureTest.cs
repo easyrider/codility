@@ -24,35 +24,13 @@ namespace CrackingCodingInterview.Test.Chapter2
             return Test(cut, @array);
         }
 
-        private static int[] Test(Algorithm<LinkedListNode<int>, LinkedListNode<int>> cut,IList<int> @array)
+        private static int[] Test(Algorithm<LinkedListNode<int>, LinkedListNode<int>> cut,IEnumerable<int> @array)
         {
-            LinkedListNode<int> previous = null;
-            LinkedListNode<int> head = null;
-            for (var index = 0; index < @array.Count; index++)
-            {
-                var t = @array[index];
-                var tmp = new LinkedListNode<int> { Data = t };
-                if (previous != null)
-                {
-                    previous.Next = tmp;
-                }
-                else
-                {
-                    head = tmp;
-                }
-
-                previous = tmp;
-            }
+            var head = LinkedListHelper.ConvertToLinkedList(@array);
 
             var result = RunTest(head, cut);
 
-            var list = new List<int>();
-            if (result != null)
-                do
-                    list.Add(result.Data);
-                while ((result = result.Next) != null);
-
-            return list.ToArray();
+            return LinkedListHelper.ConvertToArray(result);
         }
 
         public static IEnumerable TestCases
