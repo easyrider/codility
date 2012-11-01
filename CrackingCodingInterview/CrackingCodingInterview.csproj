@@ -52,6 +52,7 @@
     <Compile Include="Chapter1\ReverseCStyleString.cs" />
     <Compile Include="Chapter1\RotatePixelMatrix90degrees.cs" />
     <Compile Include="Chapter2\DeleteNodeInTheMiddleOfListHavingOnlyAccessToIt.cs" />
+    <Compile Include="Chapter2\FindLoopInLinkedList.cs" />
     <Compile Include="Chapter2\FindNthToLast.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListBase.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithoutDataStructure.cs" />
