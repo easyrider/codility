@@ -58,7 +58,9 @@
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithoutDataStructure.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithDataStructure.cs" />
     <Compile Include="Chapter2\SumTwoLinkedList.cs" />
+    <Compile Include="Chapter3\IStack.cs" />
     <Compile Include="Chapter3\IStackWithMin.cs" />
+    <Compile Include="Chapter3\SetOfStacks.cs" />
     <Compile Include="Chapter3\StackWithMinKeptInStack.cs" />
     <Compile Include="Chapter3\StackWithMinKeptInNode.cs" />
     <Compile Include="CStyleString.cs" />
