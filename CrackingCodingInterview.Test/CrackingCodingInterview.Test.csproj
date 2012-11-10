@@ -57,6 +57,7 @@
     <Compile Include="Chapter2\LinkedListHelper.cs" />
     <Compile Include="Chapter2\RemoveDuplicatesFromUnsortedLinkedListWithDataStructureTest.cs" />
     <Compile Include="Chapter2\SumTwoLinkedListTest.cs" />
+    <Compile Include="Chapter3\QueueBasedOnTwoStacksTest.cs" />
     <Compile Include="Chapter3\HanoiTowerTest.cs" />
     <Compile Include="Chapter3\SetOfStacksTest.cs" />
     <Compile Include="Chapter3\StackWithMinTest.cs" />
