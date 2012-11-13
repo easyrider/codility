@@ -60,6 +60,7 @@
     <Compile Include="Chapter3\QueueBasedOnTwoStacksTest.cs" />
     <Compile Include="Chapter3\HanoiTowerTest.cs" />
     <Compile Include="Chapter3\SetOfStacksTest.cs" />
+    <Compile Include="Chapter3\SortStackAscOrderTest.cs" />
     <Compile Include="Chapter3\StackWithMinTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />

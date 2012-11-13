@@ -63,6 +63,7 @@
     <Compile Include="Chapter3\IStackWithMin.cs" />
     <Compile Include="Chapter3\QueueBasedOnTwoStacks.cs" />
     <Compile Include="Chapter3\SetOfStacks.cs" />
+    <Compile Include="Chapter3\SortStackAscOrder.cs" />
     <Compile Include="Chapter3\StackWithMinKeptInStack.cs" />
     <Compile Include="Chapter3\StackWithMinKeptInNode.cs" />
     <Compile Include="CStyleString.cs" />
