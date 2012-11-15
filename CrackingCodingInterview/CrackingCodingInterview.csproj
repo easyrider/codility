@@ -66,6 +66,7 @@
     <Compile Include="Chapter3\SortStackAscOrder.cs" />
     <Compile Include="Chapter3\StackWithMinKeptInStack.cs" />
     <Compile Include="Chapter3\StackWithMinKeptInNode.cs" />
+    <Compile Include="Chapter4\IsTreeBalanced.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
     <Compile Include="LinkedListNode.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReferenceAttribute.cs" />
     <Compile Include="Algorithm.cs" />
+    <Compile Include="TreeNode.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
