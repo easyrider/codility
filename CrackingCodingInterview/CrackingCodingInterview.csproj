@@ -66,9 +66,13 @@
     <Compile Include="Chapter3\SortStackAscOrder.cs" />
     <Compile Include="Chapter3\StackWithMinKeptInStack.cs" />
     <Compile Include="Chapter3\StackWithMinKeptInNode.cs" />
+    <Compile Include="Chapter4\IsRouteBetweenTwoNodesInDirectedGraph.cs" />
     <Compile Include="Chapter4\IsTreeBalanced.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
+    <Compile Include="Graph.cs" />
+    <Compile Include="GraphNode.cs" />
+    <Compile Include="GraphNodeState.cs" />
     <Compile Include="LinkedListNode.cs" />
     <Compile Include="LinkedListNodeHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
