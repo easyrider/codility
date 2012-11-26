@@ -12,7 +12,7 @@ namespace CrackingCodingInterview.Chapter3
                         "this program: push|pop|peek|isEmpty")]
     public class SortStackAscOrder : Algorithm<Stack<int>, Stack<int>>
     {
-        protected override int OnInitComplexity(Stack<int> arg)
+        protected override int? OnInitComplexity(Stack<int> arg)
         {
             if (arg == null) throw new ArgumentNullException("arg");
             return arg.Count;

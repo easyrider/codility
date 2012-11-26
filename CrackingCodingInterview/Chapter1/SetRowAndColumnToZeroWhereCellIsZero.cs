@@ -11,7 +11,7 @@ namespace CrackingCodingInterview.Chapter1
         )]
     public class SetRowAndColumnToZeroWhereCellIsZero : Algorithm<int[,], int[,]>
     {
-        protected override int OnInitComplexity(int[,] arg)
+        protected override int? OnInitComplexity(int[,] arg)
         {
             if (arg == null) throw new ArgumentNullException("arg");
             return arg.Length;

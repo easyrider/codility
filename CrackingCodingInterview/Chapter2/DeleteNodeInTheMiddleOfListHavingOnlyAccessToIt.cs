@@ -10,7 +10,7 @@ namespace CrackingCodingInterview.Chapter2
                         "list, given only access to that node")]
     public class DeleteNodeInTheMiddleOfListHavingOnlyAccessToIt : Algorithm<LinkedListNode<int>, LinkedListNode<int>>
     {
-        protected override int OnInitComplexity(LinkedListNode<int> arg)
+        protected override int? OnInitComplexity(LinkedListNode<int> arg)
         {
             if (arg == null) throw new ArgumentNullException("arg");
 

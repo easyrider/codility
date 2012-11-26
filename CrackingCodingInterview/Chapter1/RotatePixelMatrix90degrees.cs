@@ -11,7 +11,7 @@ namespace CrackingCodingInterview.Chapter1
         )]
     public class RotatePixelMatrix90degrees : Algorithm<PixelMatrix, PixelMatrix>
     {
-        protected override int OnInitComplexity(PixelMatrix arg)
+        protected override int? OnInitComplexity(PixelMatrix arg)
         {
             return arg.Size;
         }

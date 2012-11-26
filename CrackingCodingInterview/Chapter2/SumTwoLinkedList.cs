@@ -10,7 +10,7 @@ namespace CrackingCodingInterview.Chapter2
                         "Write a function that adds the two numbers and returns the sum as a linked list.")]
     public class SumTwoLinkedList : Algorithm<Tuple<LinkedListNode<int>, LinkedListNode<int>>, LinkedListNode<int>>
     {
-        protected override int OnInitComplexity(Tuple<LinkedListNode<int>, LinkedListNode<int>> arg)
+        protected override int? OnInitComplexity(Tuple<LinkedListNode<int>, LinkedListNode<int>> arg)
         {
             if (arg == null) 
                 throw new ArgumentNullException("arg");

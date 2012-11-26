@@ -11,7 +11,7 @@ namespace CrackingCodingInterview.Chapter1
     
     public class AreStringsAnagrams : Algorithm<Tuple<string, string>, bool>
     {
-        protected override int OnInitComplexity(Tuple<string, string> arg)
+        protected override int? OnInitComplexity(Tuple<string, string> arg)
         {
             if (arg == null)
                 throw new ArgumentNullException();

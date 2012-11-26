@@ -10,12 +10,6 @@ namespace CrackingCodingInterview.Chapter4
                         "from the root by more than one.")]
     public class IsTreeBalanced : Algorithm<TreeNode<int>, bool>
     {
-        protected override int OnInitComplexity(TreeNode<int> arg)
-        {
-            if (arg == null) throw new ArgumentNullException("arg");
-            return -1;
-        }
-
         protected override bool OnExecute(TreeNode<int> arg)
         {
             if (arg == null) throw new ArgumentNullException("arg");

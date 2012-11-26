@@ -12,11 +12,6 @@ namespace CrackingCodingInterview.Chapter4
                         "whether there is a route between two nodes")]
     public sealed class IsRouteBetweenTwoNodesInDirectedGraph : Algorithm<Tuple<Graph, GraphNode, GraphNode>, bool>
     {
-        protected override int OnInitComplexity(Tuple<Graph, GraphNode, GraphNode> arg)
-        {
-            return -1;
-        }
-
         protected override bool OnExecute(Tuple<Graph, GraphNode, GraphNode> arg)
         {
             if (arg == null) throw new ArgumentNullException("arg");

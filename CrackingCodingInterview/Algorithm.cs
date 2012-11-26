@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Diagnostics;
-using System.Linq;
 
 namespace CrackingCodingInterview
 {
@@ -9,9 +7,9 @@ namespace CrackingCodingInterview
     {
         public const bool LoopBreak = true;
         private readonly Lazy<Stopwatch> _stopwatchLazy = new Lazy<Stopwatch>();
-        private int _baseSize;
+        private int? _baseSize;
         private int _iteration;
-
+       
         public string TimeComplexity
         {
             get { return string.Format("{0}/{1}", _iteration, _baseSize); }
@@ -53,7 +51,10 @@ namespace CrackingCodingInterview
             }
         }
 
-        protected abstract int OnInitComplexity(TInput arg);
+        protected virtual int? OnInitComplexity(TInput arg)
+        {
+            return null;
+        }
 
         protected void For(int start, int end, Action<ForContext> body)
         {
@@ -82,7 +83,7 @@ namespace CrackingCodingInterview
             _iteration++;
         }
 
-        private void SetBaseSize(int baseSize)
+        private void SetBaseSize(int? baseSize)
         {
             _baseSize = baseSize;
         }

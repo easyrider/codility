@@ -9,7 +9,7 @@ namespace CrackingCodingInterview.Chapter1
     )]
     public class ReplaceSpacesWithHtmlCode : Algorithm<Tuple<CStyleString, int>, CStyleString>
      {
-         protected override int OnInitComplexity(Tuple<CStyleString, int> arg)
+         protected override int? OnInitComplexity(Tuple<CStyleString, int> arg)
          {
              return arg.Item2;
          }

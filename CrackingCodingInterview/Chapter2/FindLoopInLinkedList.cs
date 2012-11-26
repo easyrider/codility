@@ -10,12 +10,6 @@ namespace CrackingCodingInterview.Chapter2
                         "which returns node at the beginning of the loop")]
     public class FindLoopInLinkedList : Algorithm<LinkedListNode<int>, LinkedListNode<int>>
     {
-        protected override int OnInitComplexity(LinkedListNode<int> arg)
-        { 
-            if (arg == null) throw new ArgumentNullException("arg");
-            return -1;
-        }
-
         protected override LinkedListNode<int> OnExecute(LinkedListNode<int> arg)
         {
             if (arg == null) throw new ArgumentNullException("arg");

@@ -8,7 +8,7 @@ namespace CrackingCodingInterview.Chapter2
         , Description = "Implement algorithm to find the nth to last element of a singly linked list")]
     public class FindNthToLast : Algorithm<Tuple<LinkedListNode<int>, int>, LinkedListNode<int>>
     {
-        protected override int OnInitComplexity(Tuple<LinkedListNode<int>, int> arg)
+        protected override int? OnInitComplexity(Tuple<LinkedListNode<int>, int> arg)
         {
             if (arg == null) throw new ArgumentNullException("arg");
 

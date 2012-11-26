@@ -11,7 +11,7 @@ namespace CrackingCodingInterview.Chapter4
                         "minimal height")]
     public class CreateTreeWithMinHeightFromAscOrderAlgorithm : Algorithm<int[], TreeNode<int>>
     {
-        protected override int OnInitComplexity(int[] arg)
+        protected override int? OnInitComplexity(int[] arg)
         {
             if (arg == null) throw new ArgumentNullException("arg");
             return arg.Length;

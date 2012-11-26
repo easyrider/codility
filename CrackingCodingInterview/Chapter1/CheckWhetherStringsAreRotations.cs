@@ -12,7 +12,7 @@ namespace CrackingCodingInterview.Chapter1
                         "using only one call to isSubstring")]
     public class CheckWhetherStringsAreRotations : Algorithm<Tuple<string, string>, bool>
     {
-        protected override int OnInitComplexity(Tuple<string, string> arg)
+        protected override int? OnInitComplexity(Tuple<string, string> arg)
         {
             return arg.Item1.Length;
         }
