@@ -62,6 +62,7 @@
     <Compile Include="Chapter3\SetOfStacksTest.cs" />
     <Compile Include="Chapter3\SortStackAscOrderTest.cs" />
     <Compile Include="Chapter3\StackWithMinTest.cs" />
+    <Compile Include="Chapter4\FindCommonAncestorTest.cs" />
     <Compile Include="Chapter4\FindInOrderSuccessorOfBinarySearchTreeTest.cs" />
     <Compile Include="Chapter4\GetListsOfNodesPerLevelOfTreeTest.cs" />
     <Compile Include="Chapter4\CreateTreeWithMinHeightFromAscOrderAlgorithmTest.cs" />
