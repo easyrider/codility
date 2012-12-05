@@ -72,6 +72,7 @@
     <Compile Include="Chapter4\CreateTreeWithMinHeightFromAscOrderAlgorithm.cs" />
     <Compile Include="Chapter4\IsRouteBetweenTwoNodesInDirectedGraph.cs" />
     <Compile Include="Chapter4\IsTreeBalanced.cs" />
+    <Compile Include="Chapter4\IsTreeSubtreeOfAnotherTree.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
     <Compile Include="Graph.cs" />

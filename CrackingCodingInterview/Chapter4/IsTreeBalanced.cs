@@ -26,7 +26,7 @@ namespace CrackingCodingInterview.Chapter4
             return 1 + Math.Max(GetMaxDepthOfTreeNode(node.Left), GetMaxDepthOfTreeNode(node.Right));
         }
 
-        public static int GetMinDepthOfTreeNode(TreeNode<int> node)
+        private static int GetMinDepthOfTreeNode(TreeNode<int> node)
         {
             if (node == null)
             {

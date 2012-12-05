@@ -6,10 +6,9 @@ namespace CrackingCodingInterview.Chapter4
     [Reference(
         Page = 54
         , Number = "4.6"
-        , Description = "Dsign algorithm and write code too find the first common ancestor of two nodes" +
+        , Description = "Design algorithm and write code too find the first common ancestor of two nodes" +
                         "in a binary tree. Avoid  storing additional nodes in a data structure. NOTE: This is not" +
                         "necessarily a binary search tree")]
-
     public class FindCommonAncestor<T> : Algorithm<Tuple<TreeNode<T>, TreeNode<T>, TreeNode<T>>, TreeNode<T>>
     {
         protected override TreeNode<T> OnExecute(Tuple<TreeNode<T>, TreeNode<T>, TreeNode<T>> arg)
