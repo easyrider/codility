@@ -68,6 +68,7 @@
     <Compile Include="Chapter3\StackWithMinKeptInNode.cs" />
     <Compile Include="Chapter4\FindCommonAncestor.cs" />
     <Compile Include="Chapter4\FindInOrderSuccessorOfBinarySearchTree.cs" />
+    <Compile Include="Chapter4\FindSumPathsInTree.cs" />
     <Compile Include="Chapter4\GetListsOfNodesPerLevelOfTree.cs" />
     <Compile Include="Chapter4\CreateTreeWithMinHeightFromAscOrderAlgorithm.cs" />
     <Compile Include="Chapter4\IsRouteBetweenTwoNodesInDirectedGraph.cs" />
