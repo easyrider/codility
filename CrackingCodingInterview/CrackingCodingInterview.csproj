@@ -75,6 +75,7 @@
     <Compile Include="Chapter4\IsTreeBalanced.cs" />
     <Compile Include="Chapter4\IsTreeSubtreeOfAnotherTree.cs" />
     <Compile Include="Chapter5\GetDecimalNumberBinaryRepresentation.cs" />
+    <Compile Include="Chapter5\GetNextSmallerAndBiggerNumsWithSameAmountOfBits.cs" />
     <Compile Include="Chapter5\SetBits.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
