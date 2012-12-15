@@ -71,6 +71,7 @@
     <Compile Include="Chapter4\IsRouteBetweenTwoNodesInDirectedGraphTest.cs" />
     <Compile Include="Chapter4\IsTreeBalancedTest.cs" />
     <Compile Include="Chapter5\GetNextSmallerAndBiggerNumsWithSameAmountOfBitsTest.cs" />
+    <Compile Include="Chapter5\GetNumberOfBitsRequiredToConvertTest.cs" />
     <Compile Include="Chapter5\SetBitsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />
