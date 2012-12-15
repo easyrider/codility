@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Diagnostics;
 using CrackingCodingInterview.Chapter5;
 using NUnit.Framework;
 
