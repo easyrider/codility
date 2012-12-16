@@ -78,6 +78,7 @@
     <Compile Include="Chapter5\GetNextSmallerAndBiggerNumsWithSameAmountOfBits.cs" />
     <Compile Include="Chapter5\GetNumberOfBitsRequiredToConvert.cs" />
     <Compile Include="Chapter5\SetBits.cs" />
+    <Compile Include="Chapter5\SwapOddAndEventBits.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
     <Compile Include="Graph.cs" />
