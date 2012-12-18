@@ -70,6 +70,7 @@
     <Compile Include="Chapter4\CreateTreeWithMinHeightFromAscOrderAlgorithmTest.cs" />
     <Compile Include="Chapter4\IsRouteBetweenTwoNodesInDirectedGraphTest.cs" />
     <Compile Include="Chapter4\IsTreeBalancedTest.cs" />
+    <Compile Include="Chapter5\FindMissingNumbersTest.cs" />
     <Compile Include="Chapter5\GetNextSmallerAndBiggerNumsWithSameAmountOfBitsTest.cs" />
     <Compile Include="Chapter5\GetNumberOfBitsRequiredToConvertTest.cs" />
     <Compile Include="Chapter5\SetBitsTest.cs" />
