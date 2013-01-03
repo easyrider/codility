@@ -80,6 +80,8 @@
     <Compile Include="Chapter5\GetNumberOfBitsRequiredToConvert.cs" />
     <Compile Include="Chapter5\SetBits.cs" />
     <Compile Include="Chapter5\SwapOddAndEventBits.cs" />
+    <Compile Include="Chapter8\GetFibonacciNumberIterative.cs" />
+    <Compile Include="Chapter8\GetFibonacciNumberRecursive.cs" />
     <Compile Include="CStyleString.cs" />
     <Compile Include="CStyleStringAlgorithmBase.cs" />
     <Compile Include="Graph.cs" />
