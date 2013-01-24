@@ -76,6 +76,7 @@
     <Compile Include="Chapter5\SetBitsTest.cs" />
     <Compile Include="Chapter5\SwapOddAndEventBitsTest.cs" />
     <Compile Include="Chapter8\GetPermutationsOfStringTest.cs" />
+    <Compile Include="Chapter8\PaintFillTest.cs" />
     <Compile Include="Chapter8\ReturnAllSubsetsOfSetTest.cs" />
     <Compile Include="Chapter8\GetFibonacciNumberTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

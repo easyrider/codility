@@ -83,6 +83,7 @@
     <Compile Include="Chapter8\GetFibonacciNumberIterative.cs" />
     <Compile Include="Chapter8\GetFibonacciNumberRecursive.cs" />
     <Compile Include="Chapter8\GetPermutationsOfString.cs" />
+    <Compile Include="Chapter8\PaintFill.cs" />
     <Compile Include="Chapter8\ReturnAllSubsetsOfSetIterative.cs" />
     <Compile Include="Chapter8\ReturnAllSubsetsOfSetRecursive.cs" />
     <Compile Include="CStyleString.cs" />
