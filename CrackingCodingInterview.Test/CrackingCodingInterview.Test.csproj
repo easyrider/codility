@@ -79,6 +79,7 @@
     <Compile Include="Chapter8\PaintFillTest.cs" />
     <Compile Include="Chapter8\ReturnAllSubsetsOfSetTest.cs" />
     <Compile Include="Chapter8\GetFibonacciNumberTest.cs" />
+    <Compile Include="Chapter9\SortClassWithAnagramsTest.cs" />
     <Compile Include="Chapter9\MergeTwoSortedArraysInSortedOrderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />
