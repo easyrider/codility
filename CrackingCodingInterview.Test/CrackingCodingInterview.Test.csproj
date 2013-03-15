@@ -79,6 +79,7 @@
     <Compile Include="Chapter8\PaintFillTest.cs" />
     <Compile Include="Chapter8\ReturnAllSubsetsOfSetTest.cs" />
     <Compile Include="Chapter8\GetFibonacciNumberTest.cs" />
+    <Compile Include="Chapter9\FindStringInSortedInterspersedWithEmptyStringArrayTest.cs" />
     <Compile Include="Chapter9\FindIndexOfElementInSortedRotatedArrayTest.cs" />
     <Compile Include="Chapter9\SortClassWithAnagramsTest.cs" />
     <Compile Include="Chapter9\MergeTwoSortedArraysInSortedOrderTest.cs" />
