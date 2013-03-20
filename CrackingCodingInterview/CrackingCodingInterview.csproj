@@ -89,6 +89,7 @@
     <Compile Include="Chapter9\FindIndexOfElementInSortedRotatedArray.cs" />
     <Compile Include="Chapter9\FindStringInSortedInterspersedWithEmptyStringArray.cs" />
     <Compile Include="Chapter9\IsElementPresentedInSortedMatrix.cs" />
+    <Compile Include="Chapter9\FindSuitablePeopleForTowerInCircus.cs" />
     <Compile Include="Chapter9\MergeTwoSortedArraysInSortedOrder.cs" />
     <Compile Include="Chapter9\SortClassWithAnagrams.cs" />
     <Compile Include="CStyleString.cs" />

@@ -80,6 +80,7 @@
     <Compile Include="Chapter8\ReturnAllSubsetsOfSetTest.cs" />
     <Compile Include="Chapter8\GetFibonacciNumberTest.cs" />
     <Compile Include="Chapter9\IsElementPresentedInSortedMatrixTest.cs" />
+    <Compile Include="Chapter9\FindSuitablePeopleForTowerInCircusTest.cs" />
     <Compile Include="Chapter9\FindStringInSortedInterspersedWithEmptyStringArrayTest.cs" />
     <Compile Include="Chapter9\FindIndexOfElementInSortedRotatedArrayTest.cs" />
     <Compile Include="Chapter9\SortClassWithAnagramsTest.cs" />
