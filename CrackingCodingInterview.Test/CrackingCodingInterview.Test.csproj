@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chapter10\CalculatorBasedOnPlusOperatorTest.cs" />
     <Compile Include="Chapter1\AreStringsAnagramsTests.cs" />
     <Compile Include="Chapter1\CheckWhetherStringsAreRotationsTest.cs" />
     <Compile Include="Chapter1\SetRowAndColumnToZeroWhereCellIsZeroTest.cs" />
