@@ -10,6 +10,7 @@ namespace CrackingCodingInterview
         public string Description { get; set; }
         public int Variant { get; set; }
         public string Comments { get; set; }
-        public bool Incorrect { get; set; } 
+        public bool Incorrect { get; set; }
+        public bool NoTestRequired { get; set; }
     }
 }
