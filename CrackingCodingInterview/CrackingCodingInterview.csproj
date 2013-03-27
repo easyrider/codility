@@ -41,7 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chapter10\CalculatorBasedOnPlusOperator.cs" />
+    <Compile Include="Chapter10\FindLineWhichPassesMostNumberOfPoints.cs" />
     <Compile Include="Chapter10\GetLineThatCutTwoSquaresInAHalf.cs" />
+    <Compile Include="Chapter10\Line.cs" />
+    <Compile Include="Chapter10\Point.cs" />
     <Compile Include="Chapter1\AreStringsAnagrams.cs" />
     <Compile Include="Chapter1\CheckWhetherStringsAreRotations.cs" />
     <Compile Include="Chapter1\HasStringUniqueCharactersBase.cs" />

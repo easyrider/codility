@@ -2,12 +2,12 @@
 
 namespace CrackingCodingInterview.Chapter10
 {
-     [Reference(
-        Page = 68
-        , Number = "10.5"
-        , Description = "Given two squares on a two dimensional plane, find a line that would cut these two squares in half."
-        , NoTestRequired = true
-        )]
+    [Reference(
+       Page = 68
+       , Number = "10.5"
+       , Description = "Given two squares on a two dimensional plane, find a line that would cut these two squares in half."
+       , NoTestRequired = true
+       )]
     public class GetLineThatCutTwoSquaresInAHalf : Algorithm<Tuple<Square, Square>, Line>
     {
         protected override Line OnExecute(Tuple<Square, Square> arg)
@@ -19,18 +19,18 @@ namespace CrackingCodingInterview.Chapter10
 
             if (center1 == center2)
             {
-                return new Line
-                    {
-                        Start = square1.TopLeft,
-                        End = square1.BottomRight
-                    };
+                return new Line(
+
+                       square1.TopLeft,
+                       square1.BottomRight
+                    );
             }
-            
+
             return new Line
-                {
-                    Start = center1, 
-                    End = center2
-                };
+                (
+                    center1,
+                    center2
+                );
         }
 
         private static Point Center(Square square)
@@ -39,10 +39,10 @@ namespace CrackingCodingInterview.Chapter10
             Point bottomRight = square.BottomRight;
 
             return new Point
-                {
-                    X = Mediana(topLeft.X, bottomRight.X),
-                    Y = Mediana(topLeft.Y, bottomRight.Y)
-                };
+                (
+                    Mediana(topLeft.X, bottomRight.X),
+                    Mediana(topLeft.Y, bottomRight.Y)
+                );
         }
 
         private static int Mediana(int a1, int a2)
@@ -51,21 +51,9 @@ namespace CrackingCodingInterview.Chapter10
         }
     }
 
-    public class Line
-    {
-        public Point Start { get; set; }
-        public Point End { get; set; }
-    }
-
     public class Square
     {
         public Point TopLeft { get; set; }
         public Point BottomRight { get; set; }
-    }
-
-    public class Point
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
     }
 }
