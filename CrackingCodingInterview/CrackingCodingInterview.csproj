@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Chapter10\CalculatorBasedOnPlusOperator.cs" />
     <Compile Include="Chapter10\FindLineWhichPassesMostNumberOfPoints.cs" />
+    <Compile Include="Chapter10\GetKthMagicNumber.cs" />
     <Compile Include="Chapter10\GetLineThatCutTwoSquaresInAHalf.cs" />
     <Compile Include="Chapter10\Line.cs" />
     <Compile Include="Chapter10\Point.cs" />
